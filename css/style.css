@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    list-style: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol ul {
+    list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==========================================================================
+                                    GERAL
+==========================================================================*/
+html{
+    font-size: calc(10px + 1vw);
+    margin: 0 10vw 0 10vw;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/*==========================================================================
+                                    TOPO
+==========================================================================*/
+header {
+    margin: 2vw 0 8vw;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    margin: 0 30px 0 30px;
+}
+header nav ul li a{
+    color: #553c16;
+}
+/*==========================================================================
+                                    APRESENTAÇÃO
+==========================================================================*/
+section.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #9E9B9B;
+}
+section.apresentacao div{
+    padding: 0 0 6vw 0;
+}
+section.apresentacao div h1 {
+    font-size: 2rem;
+    border-bottom:  1px solid #dedede;
+    padding: 0 0 3vw 0;
+}
+section.apresentacao div p.lorem{
+    margin: 3vw 0 3vw 0;
+}
+section.apresentacao div.user{
+    display: flex;
+}
+section.apresentacao div.user img {
+    margin: 0 3vw 0 0;
+}
+section.apresentacao div.user p{
+    color: #9E9B9B ;
+    margin: 1vw 0 0 0;
+}
+/*==========================================================================
+                                    BROWSE
+==========================================================================*/
+section.browse{
+    display: flex;
+    justify-content: space-between;
+    margin: 7vw 0 8vw 0;
+    padding: 0 0 5vw 0;
+    border-bottom: 2px solid #9E9B9B;
+}
+section.browse div h1 {
+    font-size: 2rem;
+    margin: 0 0 3vw 0;
+}
+section.browse div ol li{
+    border-bottom: 2px solid #D8D8D8;
+    margin: 0 0 2vw 0;
+}
+section.browse div ol li.no-line {
+    border-bottom: none;
+}
+section.browse div ol li h2{
+    font-size: 2rem;
+    margin: 0 0 2vw 0;
+}
+section.browse div ol li h2 span{
+    margin: 0 2vw 0 0;
+    color: #9E9B9B;
+}
+section.browse div ol li p {
+    margin: 0 0 2vw 6vw;
+    color: #9E9B9B;
+}
+/*==========================================================================
+                                    FOOTER
+==========================================================================*/
+footer{
+    text-align: center;
+}
+footer nav ul{
+    display: flex;
+    justify-content: center;
+}
+footer nav ul li{
+    font-size: 2rem;
+    margin: 0 5vw 2vw 0;
+}
+
